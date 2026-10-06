@@ -57,7 +57,7 @@ class MediaPlayer {
         return result;
     }
 
-    public double getTotalDuration() { // en heures
+    public double getTotalDuration() {
         double total = 0;
         for (Media m : playlist) total += m.getDuration();
         return total / 60;
