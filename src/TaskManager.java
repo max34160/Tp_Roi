@@ -87,6 +87,6 @@ public class TaskManager {
             }
         }
 
-        System.out.println("Import terminé : " + success + " réussie(s), " + failure + " échec(s) sur " + tasks.length);
+        System.out.println("Import terminé : " + success + " réussie, " + failure + " échec sur " + tasks.length);
     }
 }
