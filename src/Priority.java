@@ -21,7 +21,8 @@ public enum Priority {
     // Méthode utilitaire pour créer un enum depuis un String
     public static Priority fromString(String text) {
         for (Priority p : Priority.values()) {
-            if (p.toString().equalsIgnoreCase(text)) {
+            if (p.toString().equalsIgnoreCase(text) || p.name().equalsIgnoreCase(text)) {
+//                System.out.println("-------------" + p.name() + "---------------");
                 return p;
             }
         }

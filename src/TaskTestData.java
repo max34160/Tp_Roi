@@ -28,7 +28,7 @@ public class TaskTestData {
     // Grande liste pour tester les performances
     public static String[][] getLargeTaskSet() {
         return new String[][] {
-            {"Tâche 1", "Description de la tâche 1", "HIGH"},
+            {"Tâche 1", "Description de la tâche 1", "Haute"},
             {"Tâche 2", "Description de la tâche 2", "MEDIUM"},
             {"Tâche 3", "Description de la tâche 3", "LOW"},
             {"Tâche 4", "Description de la tâche 4", "HIGH"},

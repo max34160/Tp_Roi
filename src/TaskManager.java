@@ -56,7 +56,7 @@ public class TaskManager {
         }
     }
 
-    public boolean importTask(String[] taskData) {
+    private boolean importTask(String[] taskData) {
         try {
             String title = taskData[0];
             String description = taskData[1];
@@ -73,5 +73,20 @@ public class TaskManager {
             System.out.println("Tâche non importée : Data mal formatée");
             return false;
         }
+    }
+
+    public void importTasks(String[][] tasks) {
+        int success = 0;
+        int failure = 0;
+
+        for (String[] taskData : tasks) {
+            if (importTask(taskData)) {
+                success++;
+            } else {
+                failure++;
+            }
+        }
+
+        System.out.println("Import terminé : " + success + " réussie(s), " + failure + " échec(s) sur " + tasks.length);
     }
 }
